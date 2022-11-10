@@ -61,7 +61,7 @@ function ekUpload() {
     // console.log(fileType);
     var imageName = file.name;
 
-    var isGood = /\.(?=gif|jpg|png|jpeg)/gi.test(imageName);
+    var isGood = /\.(?=csv)/gi.test(imageName);
     if (isGood) {
       document.getElementById("start").classList.add("hidden");
       document.getElementById("response").classList.remove("hidden");
