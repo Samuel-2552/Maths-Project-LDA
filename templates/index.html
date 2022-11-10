@@ -1,12 +1,12 @@
 <html>
     <head>
-        <title>Image Classification</title>
+        <title>LDA-Home</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <section>
-            <h2>Image Classification Using SVM</h2><h4>(Cars and Airplanes only!!)</h4><br>
-            <p class="lead">Classify with <b>Just One Click</b><br>(credits: Samuel and Santhosh)</p>
+            <h2>Linear Discriminant Analysis</h2><h4>(with processed dataset)</h4><br>
+            <p class="lead">(credits: Samuel, Santhosh Kumaran, Poorvaja, Shivesh)</p>
 
             <!-- Upload  -->
             <form action="/upload" method="POST" id="file-upload-form" class="uploader" enctype="multipart/form-data">
@@ -16,9 +16,9 @@
                 <img id="file-image" src="#" alt="Preview" class="hidden">
                 <div id="start">
                 <i class="fa fa-download" aria-hidden="true"></i>
-                <div>Select a file or drag here</div>
-                <div id="notimage" class="hidden">Please select an image</div>
-                <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+                <div>Select a csv file or drag here</div>
+                <div id="notimage" class="hidden">Please select an csv file</div>
+                <span id="file-upload-btn" class="btn btn-primary">Select a csv file</span>
                 </div>
                 <div id="response" class="hidden">
                 <div id="messages"></div>
