@@ -1,0 +1,37 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+      <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+
+  <body>
+    <h1>Plotting the Graph to Visualize!</h1>
+    <div id="plot"></div>
+    <py-config type="json">
+        {
+          "packages": ["numpy", "matplotlib", "seaborn", "pandas"]
+        }
+    </py-config>
+    <py-env>
+      - paths:
+        - /file.csv
+    </py-env>
+    <py-script output="plot">
+      import matplotlib.pyplot as plt
+      import numpy as np
+      import seaborn as sns
+      import pandas as pd
+      data = pd.read_csv('file.csv')
+      markers = ['s', 'x','o']
+      colors = np.array(['blue','pink'])
+      sns.lmplot(x="LD1", y="LD2", data=data, markers=markers,fit_reg=False, hue='class', legend=False)
+      plt.legend(loc='upper center')
+      plt.show()
+      fig, ax = plt.subplots()
+      x=data['LD1']
+      y=data['LD2']
+      ax.scatter(x, y, c ="yellow", linewidths = 1, marker ="*", edgecolor ="black")
+      fig
+    </py-script>
+  </body>
+</html>
