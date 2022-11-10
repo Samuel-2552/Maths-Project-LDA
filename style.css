@@ -11,7 +11,7 @@ h2 {
   font-variant: small-caps;
   font-size: 36px;
   line-height: 1;
-  color: #454cad;
+  color: #ffffff;
   margin-bottom: 0;
   text-align: center;
 }
@@ -20,7 +20,7 @@ h4 {
   font-variant: small-caps;
   font-size: 25px;
   line-height: 1;
-  color: #454cad;
+  color: #ffffff;
   margin-bottom: 0;
   text-align: center;
 }
@@ -28,7 +28,7 @@ h4 {
 p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #5f6982;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -45,9 +45,9 @@ p {
   width: 100%;
   padding: 2rem 1.5rem;
   text-align: center;
-  background: #fff;
+  background: rgb(14, 13, 13);
   border-radius: 7px;
-  border: 3px solid #eee;
+  border: 3px solid rgb(0, 0, 0);
   transition: all 0.2s ease;
   -webkit-user-select: none;
     -moz-user-select: none;
@@ -55,7 +55,7 @@ p {
           user-select: none;
 }
 .uploader label:hover {
-  border-color: #454cad;
+  border-color: #202020;
 }
 .uploader label.hover {
   border: 3px solid #454cad;
