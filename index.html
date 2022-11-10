@@ -22,15 +22,10 @@
       import seaborn as sns
       import pandas as pd
       data = pd.read_csv('file.csv')
-      markers = ['s', 'x','o']
-      colors = np.array(['blue','pink'])
-      sns.lmplot(x="LD1", y="LD2", data=data, markers=markers,fit_reg=False, hue='class', legend=False)
-      plt.legend(loc='upper center')
-      plt.show()
       fig, ax = plt.subplots()
       x=data['LD1']
       y=data['LD2']
-      ax.scatter(x, y, c ="yellow", linewidths = 1, marker ="*", edgecolor ="black")
+      ax.scatter(x, y, color=['red','green','blue'])
       fig
     </py-script>
   </body>
