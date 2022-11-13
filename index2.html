@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>LDA-Home</title>
+        <!--<link rel="stylesheet" href="style.css"/>-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+        <style>
+            .intro{
+                height: 100%;
+                background-color: rgb(191, 243, 243);
+                position: relative;
+                width: 100%;
+                background-image: url('math.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                overflow: hidden;
+            }
+
+
+            .upload{
+                width: 50%;
+                height: 100%;
+                margin: auto;
+                background-color: rgb(179, 133, 221);
+            }
+
+            .quotes{
+                position:absolute;
+                background-color: rgb(43, 43, 43);
+                left: 75px;
+                top: 75px;
+                width: 30%;
+                height: 80%;
+                
+            }
+
+            .quotes-head{
+                width: auto;
+                background-color: rgba(53, 52, 52, 0.952);
+                font-family: "Times New Roman", Times, serif;
+                border-bottom: 5px solid rgb(168, 149, 168);
+                color:rgb(253, 253, 253);
+                font-size: 40px;
+            }
+
+            .quotes-body{
+                width: auto;
+                font-family: "Times New Roman", Times, serif;
+                color:rgb(253, 253, 253);
+                font-size: 35px;
+            }
+
+            .quotes-footer{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                font-family: "Times New Roman", Times, serif;
+            }
+
+            .heading{
+                text-shadow: 2px 2px rgb(243, 156, 243) ;
+            }
+
+            .btn{
+                background-color:rgb(168, 149, 168);
+                width: 100%;
+                border-radius: 0;
+                font-size: 20px;
+            }
+
+            .btn:hover{
+                background-color: rgb(211, 159, 211);
+                color: black;
+            }
+
+
+
+            @media screen and (max-width: 1500px) {
+                .quotes {width: 40%;}
+            }
+
+            @media screen and (max-width: 1200px) {
+                .quotes {width: 50%;}
+            }
+
+            @media screen and (max-width: 800px) {
+                .quotes {
+                    width: 75%;
+                    position: absolute;
+                    left: 50px;
+                    top: 50px;
+                }
+
+                .intro{
+                    height: 75%;
+                }
+            }
+
+            @media screen and (max-width: 350px) {
+                .quotes {
+                    width: 75%;
+                    position: absolute;
+                    left: 35px;
+                    top: 35px;
+                }
+            }
+
+
+            
+
+        </style>
+    </head>
+    <body>
+        <section class="intro">
+            <div class="quotes">
+                <div class="quotes-head">
+                    <h1 class="heading">P C A - O N L I N E <br>C A L C U L A T O R</h1>
+                </div>
+                <div class="quotes-body">
+                    <h3>This is a simple easy to use website to calculate PCA equations for a dataset.
+                    <br>
+                    <br>
+Just upload your CSV dataset file and some information, that's it within a minute you get the results.</h3>
+                </div>
+                <div class="quotes-footer">
+                    <a href="#upload-section"><button class="btn" focus>Try it out</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="upload-section" class="upload" target="#" name="#">
+            <h1>hello</h1>
+        </section>
+    </body>
